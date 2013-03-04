@@ -35,16 +35,21 @@ UrRibbon = {
                 }
                 wrapper.setAttribute("class", classes.join(" "));
             });
-        };
+        }
     },
 
+    /**
+     * setup onmouseover event to the ribbon wrapper element
+     * with the given id for hostname in locations array
+     * @param wrapperid
+     * @param locations : array of hostnames
+     */
     initAndBindForLocation: function(wrapperid, locations){
         if (locations.filter(function (e){  return e === location.hostname}).length > 0 ){
             this.initAndBind(wrapperid);
         } else {
-            console.log("jo");
+            document.getElementById(wrapperid).
+                setAttribute("style", "visibility: hidden");
         }
     }
-
-
 };

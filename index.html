@@ -64,7 +64,7 @@
     <a href="http://twitter.com/s1mn/">Simon Whitaker</a>.
     It is not endorsed in any way by GitHub.
 </p>
-</div>
+
 
 <!-- TOP RIGHT RIBBON: START COPYING HERE -->
 <div id="ur-ribbon-wrapper" class="ur-ribbon-wrapper ur-ribbon-right">
@@ -73,8 +73,12 @@
     </div>
 </div>
 
+
 <script type="text/javascript" src="ur-ribbon.js"></script>
-<script type="text/javascript">UrRibbon.initAndBindForLocation("ur-ribbon-wrapper",["localhost"]);</script>
+<script type="text/javascript">
+    // setup the ribbon for localhost hostname
+    UrRibbon.initAndBindForLocation("ur-ribbon-wrapper",["localhost"]);
+</script>
 <!-- STOP COPYING HERE -->
 </body>
 </html>
